@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Student extends Model
+{
+    protected $fillable = [
+        'student_number', 'first_name', 'last_name',
+        'email', 'phone', 'gender', 'course_of_study',
+    ];
+}
