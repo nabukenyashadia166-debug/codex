@@ -18,7 +18,7 @@
             <li>Administrator accounts for portal oversight</li>
           </ul>
         </div>
-        <div class="notice" style="margin:0; background: rgba(255,255,255,0.08); color:#f3f8ff; border:1px solid rgba(255,255,255,0.12);">Already registered? <a href="login.html" style="color:#fff; font-weight:700; text-decoration: underline;">Login here</a></div>
+        <div class="notice auth-notice">Already registered? <a href="{{ route('login') }}">Login here</a></div>
       </div>
 
       <div class="auth-card">
@@ -97,7 +97,7 @@
           </div>
 
           <div class="auth-meta">
-            <label style="display:flex;align-items:center;gap:8px;"><input type="checkbox"> I agree to the terms and conditions</label>
+            <label class="checkbox-inline"><input type="checkbox"> I agree to the terms and conditions</label>
           </div>
 
           <button class="btn btn-primary" type="submit">Create account</button>

@@ -16,7 +16,7 @@
             <li>Manage access by your role in the system</li>
           </ul>
         </div>
-        <div class="notice" style="margin:0; background: rgba(255,255,255,0.08); color:#f3f8ff; border:1px solid rgba(255,255,255,0.12);">Need a new account? <a href="register.html" style="color:#fff; font-weight:700; text-decoration: underline;">Create one here</a></div>
+        <div class="notice auth-notice">Need a new account? <a href="{{ route('register') }}">Create one here</a></div>
       </div>
 
       <div class="auth-card">
@@ -44,7 +44,7 @@
           </div>
 
           <div class="auth-meta">
-            <label style="display:flex;align-items:center;gap:8px;"><input type="checkbox"> Remember me</label>
+            <label class="checkbox-inline"><input type="checkbox"> Remember me</label>
             <a href="#">Forgot password?</a>
           </div>
 

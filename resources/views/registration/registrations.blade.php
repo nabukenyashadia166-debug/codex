@@ -22,15 +22,15 @@
   </div>
 </div>
 
-<div class="table-card" style="margin-top:24px;"><div class="table-wrap"><table id="registrationTable"><thead><tr><th>Registration ID</th><th>Student</th><th>Course</th><th>Registration date</th><th>Status</th></tr></thead><tbody>
+<div class="table-card top-gap"><div class="table-wrap"><table id="registrationTable"><thead><tr><th>Registration ID</th><th>Student</th><th>Course</th><th>Registration date</th><th>Status</th></tr></thead><tbody>
 <tr><td>REG001</td>
     <td>Sarah Nakato</td><td>Advanced Web Application Development</td><td>02 Nov 2026</td><td><span class="pill">Approved</span></td></tr>
 <tr><td>REG002</td><td>David Mugisha</td><td>Database Systems</td><td>01 Nov 2026</td><td><span class="pill">Approved</span></td></tr>
 <tr><td>REG003</td><td>Mary Achieng</td><td>Computer Networks</td><td>30 Oct 2026</td><td><span class="pill pending">Pending</span></td></tr>
 </tbody></table></div></div>
-<div style="height:25px"></div><div class="form-card">
+<div class="section-spacer"></div><div class="form-card">
     <h2>Course registration enquiry</h2>
-    <p>Sample front-end form layout for a student to select a course.</p><form>
+    <form>
         <div class="form-grid"><div class="field"><label>Student name</label>
             <input type="text" placeholder="Enter your full name"></div><div class="field">
                 <label>Student ID</label><input type="text" placeholder="e.g. STU001"></div>

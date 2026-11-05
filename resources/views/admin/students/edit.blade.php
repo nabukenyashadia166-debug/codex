@@ -3,16 +3,21 @@
 @section('title', 'Edit Student')
 
 @section('content')
-    <h1>Edit Student</h1>
+    <div class="toolbar layout-toolbar">
+        <div>
+            <h2>Edit student</h2>
+            <p class="muted">Update the student profile and academic information.</p>
+        </div>
+    </div>
 
-    <form action="{{ route('admin.students.update', $student) }}" method="POST">
+    <form action="{{ route('admin.students.update', $student) }}" method="POST" class="form-card portal-form">
         @csrf
         @method('PUT')
         @include('admin.students._form')
 
-        <p>
-            <button type="submit" class="btn">Update</button>
-            <a href="{{ route('admin.students.index') }}" class="btn gray">Cancel</a>
-        </p>
+        <div class="form-buttons portal-actions">
+            <button type="submit" class="btn btn-primary">Update student</button>
+            <a href="{{ route('admin.students.index') }}" class="btn btn-outline">Cancel</a>
+        </div>
     </form>
 @endsection

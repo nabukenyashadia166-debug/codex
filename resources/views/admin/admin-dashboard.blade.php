@@ -16,11 +16,11 @@
       <aside class="admin-sidebar">
         <div class="sidebar-title">Navigation</div>
         <div class="sidebar-nav">
-          <a class="active" href="admin-dashboard.html"><span>Overview</span><span>›</span></a>
-          <a href="admin-students.html"><span>Students</span><span>›</span></a>
-          <a href="admin-courses.html"><span>Courses</span><span>›</span></a>
-          <a href="admin-registrations.html"><span>Registrations</span><span>›</span></a>
-          <a href="admin-users.html"><span>User accounts</span><span>›</span></a>
+          <a class="active" href="{{ route('admin.dashboard') }}"><span>Overview</span><span>›</span></a>
+          <a href="{{ route('admin.students.index') }}"><span>Students</span><span>›</span></a>
+          <a href="{{ route('admin.courses') }}"><span>Courses</span><span>›</span></a>
+          <a href="{{ route('admin.registrations') }}"><span>Registrations</span><span>›</span></a>
+          <a href="{{ route('admin.users') }}"><span>User accounts</span><span>›</span></a>
         </div>
       </aside>
 
@@ -118,11 +118,11 @@
               <p class="muted">Key areas to review across the portal.</p>
             </div>
             <div class="actions">
-              <a class="btn btn-primary" href="admin-students.html">Open student centre</a>
+              <a class="btn btn-primary" href="{{ route('admin.students.index') }}">Open student centre</a>
             </div>
           </div>
 
-          <div class="table-card" style="padding:0; border:0; box-shadow:none;">
+          <div class="table-card compact-table">
             <div class="table-wrap">
               <table>
                 <thead>

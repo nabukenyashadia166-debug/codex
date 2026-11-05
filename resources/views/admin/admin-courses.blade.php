@@ -15,11 +15,11 @@
       <aside class="admin-sidebar">
         <div class="sidebar-title">Navigation</div>
         <div class="sidebar-nav">
-          <a href="admin-dashboard.html"><span>Overview</span><span>›</span></a>
-          <a href="admin-students.html"><span>Students</span><span>›</span></a>
-          <a class="active" href="admin-courses.html"><span>Courses</span><span>›</span></a>
-          <a href="admin-registrations.html"><span>Registrations</span><span>›</span></a>
-          <a href="admin-users.html"><span>User accounts</span><span>›</span></a>
+          <a href="{{ route('admin.dashboard') }}"><span>Overview</span><span>›</span></a>
+          <a href="{{ route('admin.students.index') }}"><span>Students</span><span>›</span></a>
+          <a class="active" href="{{ route('admin.courses') }}"><span>Courses</span><span>›</span></a>
+          <a href="{{ route('admin.registrations') }}"><span>Registrations</span><span>›</span></a>
+          <a href="{{ route('admin.users') }}"><span>User accounts</span><span>›</span></a>
         </div>
       </aside>
 

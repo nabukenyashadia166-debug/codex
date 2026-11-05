@@ -26,7 +26,7 @@
       <div class="summary-mini"><strong>3</strong><span>Approved</span></div>
       <div class="summary-mini"><strong>1</strong><span>Pending</span></div>
     </div>
-    <div id="studentRegistrations" class="student-course-grid" style="margin-top:16px;"></div>
+    <div id="studentRegistrations" class="student-course-grid has-top-space"></div>
   </div>
 </div>
 </div></section></main>
