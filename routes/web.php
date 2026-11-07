@@ -1,9 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\StudentController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RegistrationController;
+use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'index')->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/login', 'login')->name('login');
 Route::view('/register', 'registration.register')->name('register');
 Route::view('/students', 'lecturer.students')->name('students.index');
@@ -17,4 +20,6 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::view('/registrations-management', 'admin.admin-registrations')->name('registrations');
     Route::view('/users-management', 'admin.admin-users')->name('users');
     Route::resource('students', StudentController::class);
+    Route::resource('courses', CourseController::class);
+    Route::resource('registrations', RegistrationController::class);
 });
